@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+
+@keyframes pulsingShape {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #6A7282;
+  }
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #6A7282;
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 10px #6A7282;
+  }
+}
+
+.animated-shape {
+    animation: pulsingShape 2s ease-in-out infinite;
+}
